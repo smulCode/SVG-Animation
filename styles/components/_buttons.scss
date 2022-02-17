@@ -24,15 +24,110 @@ svg{
   transform: translateX(-100%)
 }
 
-svg:hover #light1 {
-  transform: translateX(20%);
+.triangles{
+
+
+  svg:hover #light1 {
+    transform: translateX(20%);
+  }
+  
+  svg:hover #dark1 {
+    transform: translateX(40%);
+    opacity: 0;
+  }
+  
+  svg:hover #dark2 {
+    transform: translateX(0%)
+  }
 }
 
-svg:hover #dark1 {
-  transform: translateX(40%);
+
+.open-bar-left,
+.open-bar-right
+{
+  transition: all 450ms ease;
+}
+
+.close-bar-top,
+.close-bar-bottom{
+  transition: all 450ms ease;
+}
+
+// .open-bar-right{
+//   transform: translateY(100%) translateX(100%);
+//   opacity:0;
+// }
+// .open-bar-left{
+//   transform: translateY(100%) translateX(-100%);
+//   opacity:0;
+// }
+.open-bar-right{
+  // transform: scale(0);
+  // opacity:0;
+  transform-origin: 0px 0px;
+  transform: matrix(0, 1, 0, 0, 15.005, 15.1);
+  
+
+ 
+}
+.open-bar-left{
+  // transform: scale(1.5);
+  transform-origin: center;
+  transform-origin: 0px 0px;
+  transform: matrix(1.5, 0, 0, 1.5, -7.5025, -7.5525);
   opacity: 0;
+ 
+  // opacity:0;
 }
 
-svg:hover #dark2 {
-  transform: translateX(0%)
+.close-bar-top
+{
+  transform:  translateX(0%)
+}
+
+.close-bar-bottom
+{
+  transform:  translateX(0%)
+}
+.hamburger.active{
+
+  .open-bar-right {
+    // transform: translateY(0%) translateY(0%);
+    // transform: scale(0.5);
+  
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    
+  }
+  .open-bar-left {
+    // transform: translateY(0%) translateY(0%);
+    // transform: scale(1);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity:1;
+  }
+
+
+  .close-bar-top 
+{
+  transform:  translateX(100%);
+  opacity:0;
+}
+
+.close-bar-bottom 
+{
+  transform:  translateX(-100%);
+  opacity:0;
+}
+}
+
+.redBurger{
+  overflow:visible;
+}
+.top-bar{
+  fill:darkblue;
+}
+.middle-bar{
+  fill:teal;
+}
+.bottom-bar{
+  fill:coral;
 }

@@ -8,23 +8,56 @@
     <title>SVG ANIMATION</title>
   </head>
   <body>
+<div class="triangles">
+  <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="triangles" clip-path="url(#clip0_1_2)">
+    <g id="darkGroup">
+    <path id="dark1" d="M64 46.268C65.3333 47.0378 65.3333 48.9623 64 49.7321L29.5 69.6506C28.1667 70.4204 26.5 69.4582 26.5 67.9186V28.0814C26.5 26.5418 28.1667 25.5796 29.5 26.3494L64 46.268Z" />
+    <path id="dark2" d="M48 46.268C49.3333 47.0378 49.3333 48.9623 48 49.7321L13.5 69.6506C12.1667 70.4204 10.5 69.4582 10.5 67.9186V28.0814C10.5 26.5418 12.1667 25.5796 13.5 26.3494L48 46.268Z" />
+    </g>
+    <g id="lightGroup">
+    <path id="light1" d="M48 46.268C49.3333 47.0378 49.3333 48.9623 48 49.7321L13.5 69.6506C12.1667 70.4204 10.5 69.4582 10.5 67.9186V28.0814C10.5 26.5418 12.1667 25.5796 13.5 26.3494L48 46.268Z" />
+    </g>
+    </g>
+    <defs>
+    <clipPath id="clip0_1_2">
+    <rect width="120" height="100" fill="white"/>
+    </clipPath>
+    </defs>
+    </svg>
+</div>
 
-    <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="triangles" clip-path="url(#clip0_1_2)">
-      <g id="darkGroup">
-      <path id="dark1" d="M64 46.268C65.3333 47.0378 65.3333 48.9623 64 49.7321L29.5 69.6506C28.1667 70.4204 26.5 69.4582 26.5 67.9186V28.0814C26.5 26.5418 28.1667 25.5796 29.5 26.3494L64 46.268Z" />
-      <path id="dark2" d="M48 46.268C49.3333 47.0378 49.3333 48.9623 48 49.7321L13.5 69.6506C12.1667 70.4204 10.5 69.4582 10.5 67.9186V28.0814C10.5 26.5418 12.1667 25.5796 13.5 26.3494L48 46.268Z" />
-      </g>
-      <g id="lightGroup">
-      <path id="light1" d="M48 46.268C49.3333 47.0378 49.3333 48.9623 48 49.7321L13.5 69.6506C12.1667 70.4204 10.5 69.4582 10.5 67.9186V28.0814C10.5 26.5418 12.1667 25.5796 13.5 26.3494L48 46.268Z" />
-      </g>
-      </g>
-      <defs>
-      <clipPath id="clip0_1_2">
-      <rect width="120" height="100" fill="white"/>
-      </clipPath>
-      </defs>
-      </svg>
+
+
+<div class="hamburger">
+  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="hamburger">
+    <g class="close-bar">
+    <line class="close-bar-top" x1="3.5" y1="9.5" x2="26.5" y2="9.5" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <line class="close-bar-bottom" x1="3.5" y1="18.5" x2="26.5" y2="18.5" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g class="open-bar">
+    <line class="open-bar-left" x1="5.18489" y1="20.8868" x2="22.8039" y2="6.10264" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    <line class="open-bar-right" x1="7.11325" y1="5.81511" x2="24.7323" y2="20.5992" stroke="black" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    </g>
+    </svg>
+
+</div>
+
+
+<div class="menu">
+  <svg class="redBurger" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g class="hamburger-red">
+    <rect class="middle-bar" x="9" y="43" width="81" height="14" rx="2"  fill-opacity="0.89"/>
+    <rect class="bottom-bar" x="9" y="63" width="81" height="14" rx="2"  fill-opacity="0.89"/>
+    <rect class="top-bar" x="9" y="23" width="81" height="14" rx="2"  fill-opacity="0.89"/>
+    </g>
+    </svg>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
     <script type="module" src="./JS/main.js"></script>
   </body>
