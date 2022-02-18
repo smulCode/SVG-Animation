@@ -62,33 +62,53 @@ const redBurger = document.querySelector(".redBurger");
 // };
 
 
-gsap.set(".top-bar", { y: 40 });
-gsap.set(".middle-bar", { y: 20, transformOrigin: "center" });
+gsap.set(".top-bar", {transformOrigin: "center" });
+gsap.set(".middle-bar", {  transformOrigin: "center" });
 gsap.set(".bottom-bar", {
-  y: 0,
   transformOrigin: "center",
 });
 
 
 const tl = gsap.timeline({
-  defaults: { duration: 1, ease: "elastic.in(1, 1)" },
+  defaults: { duration: 1, ease: "elastic.out(1.2, 1)" },
 });
 redBurger.onclick = (e) => {
+
+
   tl.fromTo(
     ".top-bar",
-    { y: 50,  },
-    { y: 40,  ease: "elastic.out(1, 1)" }
+    { y: 0,  },
+    { y: 40,   }
   )
+
   tl.fromTo(
     ".middle-bar",
-    { y: 30,  },
-    { y: 20,  ease: "elastic.out(1, 1)" },"<"
+    { y: 0,  },
+    { y: 20,   },"<"
   )
   tl.fromTo(
     ".bottom-bar",
-    { y: 10,  },
-    { y: 0,  ease: "elastic.out(1, 1)" },"<"
+    { y: -30,  },
+    { y: 0, },"<"
   )
+
+  tl.fromTo(
+    ".top-bar",
+    { y: 0,  },
+    { y: -140, rotation:"120deg" , opacity:0  }
+  )
+
+  tl.to(
+    ".middle-bar",
+    {y:0, rotation:"40deg"  }
+    ,"<"
+  )
+  tl.to(
+    ".bottom-bar",
+    { y: -20, rotation:"-40deg" },
+    "<"
+  )
+
 
 
 }
